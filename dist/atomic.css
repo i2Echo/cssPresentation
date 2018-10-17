@@ -1,0 +1,25 @@
+.Bgc\(\#0280ae\) {
+  background-color: #0280ae;
+}
+.Bgc\(\#0280ae\.5\) {
+  background-color: rgba(2,128,174,.5);
+}
+.Fl\(start\) {
+  float: left;
+}
+.P\(20px\) {
+  padding: 20px;
+}
+.W\(50\%\) {
+  width: 50%;
+}
+.Cf:before, .Cf:after {
+  content: " ";
+  display: table;
+}
+.Cf:after {
+  clear: both;
+}
+.Cf {
+  zoom: 1;
+}

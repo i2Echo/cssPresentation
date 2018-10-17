@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./dist/scss/base/normalize.css">
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="./dist/BEM.css">
+  <title>example</title>
+</head>
+<body>
+  <div class="example-block">
+
+    <div class="media media-shadow">
+      <div class="media-img">
+        <img src="https://placehold.it/50x50"/>
+      </div>
+      <div class="media-body">
+        <p>OOCSS media object. CSS is simple..., It’s simple to understand. But CSS is not simple to use or maintain.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="example-block">
+
+    <div class="message-box red-text font-18">
+      我是错误提示！ 
+    </div>
+
+  </div>
+
+  <div class="example-block">
+    <div class="media media--shadow">
+      <div class="media__img">
+        <img src="https://placehold.it/50x50"/>
+      </div>
+      <div class="media__body">
+        <p>OOCSS media object. asdhbjdjasjhajsddasjha adj</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="example-block example-block--big">
+      <a href="#" class="b-btn">
+        <span class="b-btn__text">Standard button</span>
+      </a>
+      
+      <a href="#" class="b-btn b-btn--orange b-btn--big">
+        <span class="b-btn__price">$3</span>
+        <span class="b-btn__text">Big button</span>
+      </a>
+      
+      <a href="#" class="b-btn b-btn--blue">
+        <span class="b-btn__price">$4</span>
+        <span class="b-btn__text">normal button</span>
+      </a>
+      
+      <a href="#" class="b-btn b-btn--green b-btn--big">
+        <span class="b-btn__price">$9</span>
+        <span class="b-btn__text">Big button</span>
+      </a>
+  </div>
+
+  <div class="example-block example-block--lg">
+      <div class="accordion">
+          <div class="accordion__item">
+            <div class="accordion__title js-title">Real Lorem Ipsum by 37signals</div>
+            <p class="accordion__copy accordion__copy--open js-copy">By not having the imagination to imagine what the content "might" be, a design consideration is lost. Meaning becomes obfuscated because "it's just text", understandability gets compromised because nobody realized that this text stuff was actually meant to be read. Opportunities get lost because the lorem ipsum garbage that you used instead of real content didn't suggest opportunities. The text then gets made really small, because, it's not meant to be used, we might as well create loads of that lovely white space.</p>
+          </div>
+          
+          <div class="accordion__item">
+            <div class="accordion__title js-title">A random title</div>
+            <p class="accordion__copy js-copy">By not having the imagination to imagine what the content "might" be, a design consideration is lost. Meaning becomes obfuscated because "it's just text", understandability gets compromised because nobody realized that this</p>
+          </div>
+          
+          <div class="accordion__item">
+            <div class="accordion__title js-title">A random title</div>
+            <p class="accordion__copy js-copy">By not having the imagination to imagine what the content "might" be, a design consideration is lost. Meaning becomes obfuscated because "it's just text", understandability gets compromised because nobody realized that this</p>
+          </div>
+          
+          <div class="accordion__item">
+            <div class="accordion__title js-title">A random title</div>
+            <p class="accordion__copy js-copy">By not having the imagination to imagine what the content "might" be, a design consideration is lost. Meaning becomes obfuscated because "it's just text", understandability gets compromised because nobody realized that this</p>
+          </div>
+          
+          <div class="accordion__item">
+            <div class="accordion__title js-title">A random title</div>
+            <p class="accordion__copy js-copy">By not having the imagination to imagine what the content "might" be, a design consideration is lost. Meaning becomes obfuscated because "it's just text", understandability gets compromised because nobody realized that this</p>
+          </div>
+        </div>
+  </div>
+
+  <div class="example-block">
+    <div class="btn btn-large btn-blue">按钮1</div>
+    <div class="btn btn-small btn-teal">按钮2</div>
+    <div class="btn btn-small btn-blue">按钮3</div>
+  </div>
+
+  <div class="example-block">
+    
+  </div>
+
+</body>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+  var $title = $('.js-title');
+  var copy = '.js-copy';
+
+  $title.click(function () {
+    $(this).next(copy).slideToggle();
+    $(this).parent().siblings().children().next().slideUp();
+    return false;
+  });
+</script>
+
+</html>
+
+
